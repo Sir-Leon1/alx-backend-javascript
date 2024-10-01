@@ -23,9 +23,8 @@ Thumbs.db
 
 # Coverage
 coverage/
-
-*main.js
 main.js
+*main.js
 
 # Temporary files
 *.tmp
