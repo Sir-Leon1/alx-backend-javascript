@@ -1,1 +1,36 @@
-.idea
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+main.js
+*main.js
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Sensitive config files
+.firebase/
+.expo/
