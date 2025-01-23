@@ -1,6 +1,5 @@
 import readDatabase from '../utils';
 
-
 const VALID_MAJORS = ['CS', 'SWE'];
 
 /**
@@ -9,13 +8,13 @@ const VALID_MAJORS = ['CS', 'SWE'];
 class StudentsController {
   static getAllStudents(request, response) {
     const dataPath = process.argv.length > 2 ? process.argv[2] : '';
-	console.log("This is the data path", dataPath);
+    console.log('This is the data path', dataPath);
 
     readDatabase(dataPath)
       .then((studentGroups) => {
-		console.log("This is the student groups", studentGroups);
+        console.log('This is the student groups', studentGroups);
         const responseParts = ['This is the list of our students'];
-        
+
         const cmpFxn = (a, b) => {
           if (a[0].toLowerCase() < b[0].toLowerCase()) {
             return -1;
