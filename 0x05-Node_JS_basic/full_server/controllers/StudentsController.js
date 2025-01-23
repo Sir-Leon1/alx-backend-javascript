@@ -37,7 +37,7 @@ class StudentsController {
       .catch((err) => {
         response
           .status(500)
-          .send(err instanceof Error ? err.message : err.toString());
+          .send('Cannot load the database');
       });
   }
 
@@ -62,7 +62,7 @@ class StudentsController {
       .catch((err) => {
         response
           .status(500)
-          .send(err instanceof Error ? err.message : err.toString());
+          .send('Cannot load the database');
       });
   }
 }

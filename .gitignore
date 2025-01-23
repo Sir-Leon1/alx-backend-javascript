@@ -34,3 +34,6 @@ main.js
 # Sensitive config files
 .firebase/
 .expo/
+
+
+*main*
